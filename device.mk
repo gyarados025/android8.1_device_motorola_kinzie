@@ -17,8 +17,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product-if-exists, vendor/motorola/kinzie/kinzie-vendor.mk)
 
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
-ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
+#ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
+#ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 
 # Audio
 PRODUCT_COPY_FILES += \
