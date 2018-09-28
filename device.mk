@@ -73,10 +73,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/com.motorola.cameraone.xml:system/etc/permissions/com.motorola.cameraone.xml
 
-# CMActions
+# LineageActions
 PRODUCT_PACKAGES += \
-    CMActions \
-    libjni_CMActions
+	LineageActions
 
 # Display
 PRODUCT_AAPT_CONFIG := normal
