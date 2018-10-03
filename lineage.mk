@@ -17,4 +17,13 @@ PRODUCT_MODEL := XT1581
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
+TARGET_VENDOR_PRODUCT_NAME := kinzie_retail
+TARGET_VENDOR_DEVICE_NAME := kinzie
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+  PRIVATE_BUILD_DESC="kinzie_reteu-user 7.0 NPKS25.200-12-9 6 release-keys"
+  
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
+BUILD_FINGERPRINT := motorola/kinzie_reteu/kinzie:7.0/NPKS25.200-12-9/6:user/release-keys 
+
 TARGET_VENDOR := motorola
