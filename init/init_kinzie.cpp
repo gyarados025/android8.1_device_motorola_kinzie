@@ -79,26 +79,25 @@ void vendor_load_properties()
         if ((car == "reteu") || (car == "retgb")) {
             // EU
             setSsim();
-            property_override("ro.build.description", "kinzie_reteu-user 6.0 MPK24.78-8 10 release-keys");
-            property_override("ro.build.fingerprint", "motorola/kinzie_reteu/kinzie:6.0/MPK24.78-8/10:user/release-keys");
+            property_override("ro.build.description", "kinzie_reteu-user 7.0 NPKS25.200-12-9 6 release-keys");
+            property_override("ro.build.fingerprint", "motorola/kinzie_reteu/kinzie:7.0/NPKS25.200-12-9/6:user/release-keys");
             property_set("ro.fsg-id", "emea");
         } else if ((car == "retbr") || (car == "retla") || (car == "tefbr") || (car == "timbr")) {
             /* Brazil -- LATAM*/
             setLatMsim();
             property_set("ro.build.version.full","Blur_Version.24.11.8.kinzie_retla_ds.retla.en.01");
-            property_override("ro.build.description", "kinzie_retla_ds-user 6.0 MPK24.78-8 9 release-keys");
-            property_override("ro.build.fingerprint", "motorola/kinzie_retla_ds/kinzie_uds:6.0/MPK24.78-8/9:user/release-keys");
+            property_override("ro.build.description", "kinzie_reteu-user 7.0 NPKS25.200-12-9 6 release-keys");
+            property_override("ro.build.fingerprint", "motorola/kinzie_reteu/kinzie:7.0/NPKS25.200-12-9/6:user/release-keys");
         } else if (car == "retmx") {
             /* Mexico */
             setLatMsim();
-            property_set("ro.build.version.full","Blur_Version.24.11.8.kinzie_retmx_ds.retla.en.01");
-            property_override("ro.build.description", "kinzie_retmx_ds-user 6.0 MPK24.78-8 8 release-keys");
-            property_override("ro.build.fingerprint", "motorola/kinzie_retmx_ds/kinzie_uds:6.0/MPK24.78-8/8:user/release-keys");
+            property_override("ro.build.description", "kinzie_reteu-user 7.0 NPKS25.200-12-9 6 release-keys");
+            property_override("ro.build.fingerprint", "motorola/kinzie_reteu/kinzie:7.0/NPKS25.200-12-9/6:user/release-keys");
         } else {
             //default to EU
             setSsim();
-            property_override("ro.build.description", "kinzie_reteu-user 6.0 MPK24.78-8 10 release-keys");
-            property_override("ro.build.fingerprint", "motorola/kinzie_reteu/kinzie:6.0/MPK24.78-8/10:user/release-keys");
+            property_override("ro.build.description", "kinzie_reteu-user 7.0 NPKS25.200-12-9 6 release-keys");
+            property_override("ro.build.fingerprint", "motorola/kinzie_reteu/kinzie:7.0/NPKS25.200-12-9/6:user/release-keys");
         }
     } else if ((sku == "XT1585") || (sku == "MOTXT1585")) {
         /* US */
@@ -125,8 +124,8 @@ void vendor_load_properties()
         property_set("ro.telephony.default_cdma_sub", "0");
         property_set("ril.subscription.types", "RUIM");
         property_set("persist.radio.force_get_pref", "1");
-        property_override("ro.build.description", "kinzie_retcn_ds-user 5.1.1 LPK23.229-1 1 release-keys");
-        property_override("ro.build.fingerprint", "motorola/kinzie_retcn_ds/kinzie_uds:5.1.1/LPK23.229-1/1:user/release-keys");
+        property_override("ro.build.description", "kinzie_reteu-user 7.0 NPKS25.200-12-9 6 release-keys");
+        property_override("ro.build.fingerprint", "motorola/kinzie_reteu/kinzie:7.0/NPKS25.200-12-9/6:user/release-keys");
     }
 }
 static void setSsim(void)
